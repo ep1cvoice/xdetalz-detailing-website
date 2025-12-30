@@ -1,5 +1,5 @@
 # XDetalz Landing Page – Client Website
--------------------------------------------------------------------------------------
+
 ## 1. Project Overview
 This project delivers a complete, responsive landing page built for a client.
 
@@ -14,7 +14,7 @@ The UI is built in SCSS, using a modular structure divided into components and g
 Animations rely mainly on transform and transition, without unnecessary keyframes.
 
 The landing page includes informational sections, a slider, reviews, FAQ, and contact details.
--------------------------------------------------------------------------------------
+
 ## 2. Technologies Used
 *Front-end*
 - TML5
@@ -25,7 +25,7 @@ The landing page includes informational sections, a slider, reviews, FAQ, and co
 - Swiper (installed via npm)
 - BEM naming convention
 - Responsive breakpoints
--------------------------------------------------------------------------------------
+
 ## 3. Key Features
 - sticky navigation with mobile menu
 - Swiper-based carousel/slider
@@ -35,7 +35,7 @@ The landing page includes informational sections, a slider, reviews, FAQ, and co
 - structured SCSS component system
 - automatic current year in footer
 - organized and maintainable file structure
--------------------------------------------------------------------------------------
+
 ## 4. SCSS Structure
 *The stylesheet is divided into logical modules for clarity and scalability.*
 scss/
@@ -56,7 +56,7 @@ scss/
   main.scss
 
 main.scss imports all sections and builds the final stylesheet.
--------------------------------------------------------------------------------------
+
 ## 5. HTML and BEM Structure to simplify maintaining and future development
 
 *BEM naming convention:*
@@ -64,7 +64,6 @@ main.scss imports all sections and builds the final stylesheet.
 - element: section-name__element
 - modifier: section-name__element--modifier
 
--------------------------------------------------------------------------------------
 ## 6. Animations
 
 *Animations are implemented mainly using:*
@@ -73,13 +72,12 @@ main.scss imports all sections and builds the final stylesheet.
 - shadows and gradients
 
 This keeps interactions smooth and efficient while maintaining a premium visual style.
--------------------------------------------------------------------------------------
+
 ## 7. Project Status
 
 The project is complete and ready for presentation to the client.
 It fulfills its role as a landing page and can be extended further if needed.
 
--------------------------------------------------------------------------------------
 ## 8. Deployment
 
 Coming soon
