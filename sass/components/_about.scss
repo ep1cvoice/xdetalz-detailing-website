@@ -1,6 +1,5 @@
 @use '../colors' as c;
 
-
 .about {
 	padding: 2rem;
 
@@ -28,6 +27,12 @@
 			height: auto;
 			border-radius: 1rem;
 			box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+			transition: transform 0.3s;
+
+			&:hover {
+				transform: translateY(-6px);
+				box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+			}
 		}
 	}
 

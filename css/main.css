@@ -293,6 +293,11 @@ section {
   height: auto;
   border-radius: 1rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+.about__image img:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
 }
 .about__content {
   max-width: 600px;
@@ -346,6 +351,11 @@ section {
      object-fit: cover;
   border-radius: 24px;
   filter: contrast(1.1) saturate(0.9);
+  transition: transform 0.3s;
+}
+.services__image img:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
 }
 .services .intro {
   font-size: 1.7rem;
@@ -680,7 +690,7 @@ section {
   line-height: 1.6;
 }
 .faq__item--active .faq__answer {
-  max-height: 400px;
+  max-height: 450px;
   padding-top: 15px;
   padding-bottom: 15px;
 }
@@ -941,17 +951,8 @@ section {
   .about__content {
     align-items: flex-start;
   }
-  .about__image {
-    transform: translateX(-20px);
-    opacity: 0;
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-  }
-  .about__image.active {
-    opacity: 1;
-    transform: translateX(0);
-  }
   .projects .cta-btn {
-    width: 25%;
+    width: 40%;
   }
 }
 @media (min-width: 1550px) {
