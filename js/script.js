@@ -3,42 +3,55 @@ const navLinks = document.querySelectorAll('.nav__menu-mobile .nav__link');
 const burger = document.querySelector('.nav__burger');
 const mobileMenu = document.querySelector('.nav__menu-mobile');
 const faqItems = document.querySelectorAll('.faq__item');
+const aboutImg = document.querySelector('.about__image');
+const yearSpan = document.querySelector('.current-year');
 
-window.addEventListener('scroll', () => {
+function handleNavScroll() {
 	if (window.scrollY > 10) {
 		nav.classList.add('nav--scrolled');
 	} else {
 		nav.classList.remove('nav--scrolled');
 	}
-});
+}
 
-// Toggle menu
-burger.addEventListener('click', () => {
-    mobileMenu.classList.toggle('nav__menu-mobile--active');
-});
+function toggleMobileMenu() {
+	mobileMenu.classList.toggle('nav__menu-mobile--active');
+}
 
-// Zamykaj menu po kliknięciu linku
-navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        mobileMenu.classList.remove('nav__menu-mobile--active');
-    });
-});
+function closeMobileMenu() {
+	mobileMenu.classList.remove('nav__menu-mobile--active');
+}
 
-faqItems.forEach((item) => {
+function toggleFaqItem(item) {
 	const btn = item.querySelector('.faq__question');
 
-	btn.addEventListener('click', () => {
-		faqItems.forEach((i) => {
-			if (i !== item) {
-				i.classList.remove('faq__item--active');
-				i.querySelector('.faq__question').classList.remove(
-					'faq__question--active'
-				);
-			}
-		});
-
-		item.classList.toggle('faq__item--active');
-		btn.classList.toggle('faq__question--active');
+	faqItems.forEach(i => {
+		if (i !== item) {
+			i.classList.remove('faq__item--active');
+			i.querySelector('.faq__question').classList.remove('faq__question--active');
+		}
 	});
-});
 
+	item.classList.toggle('faq__item--active');
+	btn.classList.toggle('faq__question--active');
+}
+
+function activateAboutImage() {
+	aboutImg.classList.add('active');
+}
+
+function setCurrentYear() {
+	const currentYear = new Date().getFullYear();
+	yearSpan.innerText = currentYear;
+}
+
+window.addEventListener('scroll', handleNavScroll);
+burger.addEventListener('click', toggleMobileMenu);
+navLinks.forEach(link => link.addEventListener('click', closeMobileMenu));
+faqItems.forEach(item => {
+	const btn = item.querySelector('.faq__question');
+	btn.addEventListener('click', () => toggleFaqItem(item));
+});
+window.addEventListener('load', activateAboutImage);
+
+setCurrentYear();

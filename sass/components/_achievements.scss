@@ -1,0 +1,43 @@
+@use '../colors' as c;
+
+
+.achievements {
+	background: radial-gradient(circle at top, #222 0%, #111 60%, #0b0b0b 100%);
+
+	&__grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 30px;
+	}
+
+	&__item {
+		padding: 30px 20px;
+		background: rgba(255, 255, 255, 0.05);
+		border: 1px solid c.$text-light;
+		border-radius: 20px;
+		text-align: center;
+		backdrop-filter: blur(12px);
+		box-shadow: 0 0 25px rgba(255, 200, 0, 0.1),
+			inset 0 0 30px rgba(255, 200, 0, 0.05);
+		transition: transform 0.3s, box-shadow 0.3s;
+
+		&:hover {
+			transform: translateY(-6px);
+			box-shadow: 0 0 35px rgba(255, 200, 0, 0.25),
+				inset 0 0 40px rgba(255, 200, 0, 0.08);
+		}
+	}
+
+	&__icon {
+		font-size: 3rem;
+		margin-bottom: 15px;
+		color: #ffd700;
+		filter: drop-shadow(0 0 8px rgba(255, 200, 0, 0.4));
+	}
+
+	&__item p {
+		color: #ccc;
+		font-size: 1.4rem;
+		line-height: 1.4;
+	}
+}

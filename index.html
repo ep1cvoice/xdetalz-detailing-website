@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DetalX</title>
+    <title>XDetalz Auto Detailing</title>
+    <link rel="icon" type="image/jpg" href="./img/icons/favicon.png">
     <script src="https://kit.fontawesome.com/8203c85e37.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -69,7 +70,8 @@
                 </h1>
 
                 <p class="hero__text">
-                    Twój samochód zasługuje na najlepszą pielęgnację. Każdy detal jest ważny, a efekt końcowy zawsze robi wrażenie.
+                    Twój samochód zasługuje na najlepszą pielęgnację. Każdy detal jest ważny, a efekt końcowy zawsze
+                    robi wrażenie.
                 </p>
 
                 <div class="hero__actions">
@@ -90,19 +92,19 @@
         <section class="about section" id="about">
             <div class="wrapper">
 
-                <h2 class="section-title">info</h2>
+                <h2 class="section-title">o mnie</h2>
                 <div class="underline"></div>
+                <span class="eyebrow">Poznajmy się</span>
 
                 <div class="about__box">
                     <div class="about__image">
-                        <img src="img/pexels-chloekalaartist-1043474.jpg" alt="Krystian Semla - auto detailing" />
+                        <img src="img/hero/hero-self.jpg" alt="Krystian Semla - auto detailing" />
                     </div>
 
                     <div class="about__content">
-                        <h2 class="about__title">O mnie</h2>
-                        <h3 class="about__name">Jan Przykładowy</h3>
+                        <h3 class="about__name">Krystian Semla</h3>
                         <p class="about__text">
-                            Witaj! Nazywam się <strong>Jan</strong> i od lat z pasją zajmuję się <strong>auto
+                            Witaj! Nazywam się <strong>Krystian</strong> i od lat z pasją zajmuję się <strong>auto
                                 detailingiem</strong>.
                             Dla mnie to nie tylko praca – to sztuka dbania o każdy detal Twojego samochodu.
                         </p>
@@ -123,20 +125,22 @@
         <section class="services" id="services">
             <h2 class="section-title">usługi</h2>
             <div class="underline"></div>
+            <span class="eyebrow">co mogę zrobić dla twojego auta</span>
             <div class="wrapper services__layout-top">
 
 
-                <!-- LEFT: IMAGE -->
+
                 <div class="services__image">
                     <img src="./img/services/polishing.jpg" alt="Premium detailing lakieru" />
                 </div>
 
 
-                <!-- RIGHT: CONTENT -->
+
                 <div class="services__content">
                     <h2 class="section-title">Perfekcja zaczyna się od podstaw</h2>
                     <p class="intro">
-                        Profesjonalny detailing oparty na precyzji i doświadczeniu. Skupiamy się na elementach, które
+                        Wykonuję profesjonalny detailing oparty na precyzji i doświadczeniu. Skupiam się na elementach,
+                        które
                         realnie wpływają na wygląd, trwałość i wartość Twojego auta.
                     </p>
 
@@ -176,13 +180,11 @@
             <div class="wrapper services__layout-bottom">
 
 
-                <!-- LEFT: IMAGE -->
                 <div class="services__image">
                     <img src="./img/services/interior.jpg" alt="Premium detailing lakieru" />
                 </div>
 
 
-                <!-- RIGHT: CONTENT -->
                 <div class="services__content services__content-bottom">
 
 
@@ -227,85 +229,100 @@
 
         <section class="projects section" id="projects">
             <div class="wrapper">
-                <h2 class="section-title">Wybrane realizacje</h2>
+                <h2 class="section-title">Galeria</h2>
                 <div class="underline"></div>
-                <div class="swiper-wrapper projects__slider">
+                <span class="eyebrow">zobacz wybrane realizacje</span>
 
-                    <div class="projects__card">
-                        <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738" alt="BMW M4"
-                            loading="lazy">
-                        <div class="projects__content">
-                            <h3>BMW M4</h3>
-                            <p>Korekta lakieru · Ceramika · Wnętrze</p>
-                            <a href="#">Zobacz realizację →</a>
+
+                <div class="swiper projects__slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide projects__card">
+                            <img src="./img/gallery/formentor.jpg" alt="Cupra Formentor grey" loading="lazy">
+                            <div class="projects__content">
+                                <h3>Cupra Formentor</h3>
+                                <p>Korekta lakieru · Ceramika · Felgi · Wnętrze</p>
+                                <a href="https://www.instagram.com/p/DQRk0uuCJQt/" target="_blank">Zobacz realizację
+                                    →</a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide projects__card">
+                            <img src="./img/gallery/bmw-3.jpg" alt="BMW seria 3 E30 silver" loading="lazy">
+                            <div class="projects__content">
+                                <h3>BMW 3 E30</h3>
+                                <p>Full Detailing · Ceramika</p>
+                                <a href="https://www.instagram.com/p/DMpaG7uoH18/" target="_blank">Zobacz realizację
+                                    →</a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide projects__card">
+                            <img src="./img/gallery/volvo-xc60.jpg" alt="SUV Volvo XC60 grey" loading="lazy">
+                            <div class="projects__content">
+                                <h3>Volvo XC60</h3>
+                                <p>Korekta lakieru · Ceramika · Felgi · Wnętrze</p>
+                                <a href="https://www.instagram.com/p/DKEjzq9oD7T/" target="_blank">Zobacz realizację
+                                    →</a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide projects__card">
+                            <img src="./img/gallery/nissan-qashqai-blue.jpg" alt="SUV Nissan Qashqai blue"
+                                loading="lazy">
+                            <div class="projects__content">
+                                <h3>Nissan Qashqai</h3>
+                                <p>Korekta lakieru · Ceramika · Wnętrze</p>
+                                <a href="https://www.instagram.com/p/DPJ7aswCCDS/" target="_blank">Zobacz realizację
+                                    →</a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide projects__card">
+                            <img src="./img/gallery/bmw-7-1.jpg" alt="BMW 7 F01" loading="lazy">
+                            <div class="projects__content">
+                                <h3>BMW 7 F01</h3>
+                                <p>Korekta lakieru · Ceramika · Wnętrze · Skóra </p>
+                                <a href="https://www.instagram.com/p/DL0emMRIJFm/?img_index=1" target="_blank">Zobacz
+                                    realizację →</a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide projects__card">
+                            <img src="./img/gallery/insignia.jpg" alt="Opel Insignia grey" loading="lazy">
+                            <div class="projects__content">
+                                <h3>Opel Insignia</h3>
+                                <p>Full Detailing · Felgi</p>
+                                <a href="https://www.instagram.com/p/DLyxEg2IpSg/" target="_blank">Zobacz realizację
+                                    →</a>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="projects__card">
-                        <img src="https://images.unsplash.com/photo-1603386329225-868f9b1ee6c9" alt="Audi RS6"
-                            loading="lazy">
-                        <div class="projects__content">
-                            <h3>Audi RS6</h3>
-                            <p>One-step · Ceramika</p>
-                            <a href="#">Zobacz realizację →</a>
-                        </div>
-                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
 
-                    <div class="projects__card">
-                        <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8" alt="Mercedes AMG GT"
-                            loading="lazy">
-                        <div class="projects__content">
-                            <h3>Mercedes AMG GT</h3>
-                            <p>Full detailing · Felgi</p>
-                            <a href="#">Zobacz realizację →</a>
-                        </div>
-                    </div>
-
-                    <div class="projects__card">
-                        <img src="https://images.unsplash.com/photo-1601924579537-7c0b0f7b88b6" alt="Porsche 911"
-                            loading="lazy">
-                        <div class="projects__content">
-                            <h3>Porsche 911</h3>
-                            <p>Korekta 2-step · Ceramika</p>
-                            <a href="#">Zobacz realizację →</a>
-                        </div>
-                    </div>
-
-                    <div class="projects__card">
-                        <img src="https://images.unsplash.com/photo-1617098900591-3f90928e8c54" alt="Range Rover Sport"
-                            loading="lazy">
-                        <div class="projects__content">
-                            <h3>Range Rover Sport</h3>
-                            <p>Detailing wnętrza · Skóra</p>
-                            <a href="#">Zobacz realizację →</a>
-                        </div>
-                    </div>
-
-                    <div class="projects__card">
-                        <img src="https://images.unsplash.com/photo-1621789098261-3a28c98aefc6" alt="Tesla Model S"
-                            loading="lazy">
-                        <div class="projects__content">
-                            <h3>Tesla Model S</h3>
-                            <p>Powłoka ceramiczna · Felgi</p>
-                            <a href="#">Zobacz realizację →</a>
-                        </div>
-                    </div>
-
+                    <div class="swiper-pagination"></div>
                 </div>
+                <a href="https://www.instagram.com/xdetalzx/" class="cta-btn" target="_blank">Zobacz więcej na profilu
+                    <img src="./img/icons/954290_2227.svg" alt="instagram icon">
+                </a>
             </div>
         </section>
 
 
 
+
         <section class="reviews" id="reviews">
-            <div class="reviews__wrapper wrapper">
-                <h2 class="reviews__title section-title">Opinie klientów</h2>
+            <div class="wrapper">
+                <h2 class="reviews__title section-title">opinie</h2>
                 <div class="reviews__underline underline"></div>
+                <span class="eyebrow">co mówią klienci</span>
 
                 <div class="reviews__carousel">
+
                     <div class="reviews__item">
                         <div class="reviews__header">
-                            <img src="https://i.pravatar.cc/80?img=1" alt="Jan" class="reviews__avatar">
+                            <img src="./img/icons/blank-profile-pic.png" alt="Jan" class="reviews__avatar">
                             <div class="reviews__info">
                                 <h3 class="reviews__name">Jan</h3>
                                 <span class="reviews__car">Audi A4</span>
@@ -318,52 +335,87 @@
 
                     <div class="reviews__item">
                         <div class="reviews__header">
-                            <img src="https://i.pravatar.cc/80?img=2" alt="Marta" class="reviews__avatar">
+                            <img src="./img/icons/blank-profile-pic.png" alt="Marta" class="reviews__avatar">
                             <div class="reviews__info">
                                 <h3 class="reviews__name">Marta</h3>
                                 <span class="reviews__car">Mercedes C200</span>
                             </div>
                         </div>
                         <div class="reviews__stars">★★★★★</div>
-                        <p class="reviews__text">Profesjonalnie, szybko i czysto. Wnętrze pachnie nowością, polecam
-                            każdemu!</p>
+                        <p class="reviews__text">
+                            Profesjonalnie, szybko i czysto. Wnętrze pachnie nowością, polecam każdemu!
+                        </p>
                     </div>
 
                     <div class="reviews__item">
                         <div class="reviews__header">
-                            <img src="https://i.pravatar.cc/80?img=3" alt="Paweł" class="reviews__avatar">
+                            <img src="./img/icons/blank-profile-pic.png" alt="Paweł" class="reviews__avatar">
                             <div class="reviews__info">
                                 <h3 class="reviews__name">Paweł</h3>
                                 <span class="reviews__car">BMW F11</span>
                             </div>
                         </div>
                         <div class="reviews__stars">★★★★★</div>
-                        <p class="reviews__text">Że skóra jak nowa! Renowacja petarda, ceramika i felgi dopieszczone do
-                            perfekcji!</p>
+                        <p class="reviews__text">
+                            Wnętrze autka jak po odebraniu z salonu! Renowacja doskonała, lakier, ceramika i felgi
+                            doprowadzone do perfekcji!
+                        </p>
                     </div>
+
                     <div class="reviews__item">
                         <div class="reviews__header">
-                            <img src="https://i.pravatar.cc/80?img=3" alt="Paweł" class="reviews__avatar">
+                            <img src="./img/icons/blank-profile-pic.png" alt="Ewelina" class="reviews__avatar">
                             <div class="reviews__info">
-                                <h3 class="reviews__name">Paweł</h3>
-                                <span class="reviews__car">BMW F11</span>
+                                <h3 class="reviews__name">Ewelina</h3>
+                                <span class="reviews__car">Opel Insignia</span>
                             </div>
                         </div>
                         <div class="reviews__stars">★★★★★</div>
-                        <p class="reviews__text">Że skóra jak nowa! Renowacja petarda, ceramika i felgi dopieszczone do
-                            perfekcji!</p>
+                        <p class="reviews__text">
+                            Szczerze mówiąc nie spodziewałam się takiego efektu. Auto wygląda jak po odbiorze z salonu,
+                            a
+                            kierownica jakby była wymieniona na nową. Super!
+                        </p>
                     </div>
+
                     <div class="reviews__item">
                         <div class="reviews__header">
-                            <img src="https://i.pravatar.cc/80?img=3" alt="Paweł" class="reviews__avatar">
+                            <img src="./img/icons/blank-profile-pic.png" alt="Tomek" class="reviews__avatar">
                             <div class="reviews__info">
-                                <h3 class="reviews__name">Paweł</h3>
-                                <span class="reviews__car">BMW F11</span>
+                                <h3 class="reviews__name">Tomek</h3>
+                                <span class="reviews__car">Dacia Duster</span>
                             </div>
                         </div>
                         <div class="reviews__stars">★★★★★</div>
-                        <p class="reviews__text">Że skóra jak nowa! Renowacja petarda, ceramika i felgi dopieszczone do
-                            perfekcji!</p>
+                        <p class="reviews__text">Cena do jakości? Bajka. Wrócę jeszcze na ceramikę na zimę!</p>
+                    </div>
+
+                    <div class="reviews__item">
+                        <div class="reviews__header">
+                            <img src="./img/icons/blank-profile-pic.png" alt="Damian" class="reviews__avatar">
+                            <div class="reviews__info">
+                                <h3 class="reviews__name">Damian</h3>
+                                <span class="reviews__car">Volkswagen Golf 5</span>
+                            </div>
+                        </div>
+                        <div class="reviews__stars">★★★★★</div>
+                        <p class="reviews__text">
+                            Tapicerka była tragiczna... a teraz? Nawet moja żona nie wierzy, że to ten sam Golf.
+                        </p>
+                    </div>
+
+                    <div class="reviews__item">
+                        <div class="reviews__header">
+                            <img src="./img/icons/blank-profile-pic.png" alt="Karolina" class="reviews__avatar">
+                            <div class="reviews__info">
+                                <h3 class="reviews__name">Karolina</h3>
+                                <span class="reviews__car">Ford Kuga</span>
+                            </div>
+                        </div>
+                        <div class="reviews__stars">★★★★★</div>
+                        <p class="reviews__text">
+                            Świetny kontakt! Dokładność na wysokim poziomie. Polecam z całego serca.
+                        </p>
                     </div>
 
                 </div>
@@ -372,10 +424,12 @@
 
 
 
+
         <section class="achievements" id="achievements">
             <div class="wrapper">
                 <h2 class="achievements__title section-title">Osiągnięcia</h2>
                 <div class="achievements__underline underline"></div>
+                <span class="eyebrow">możesz na mnie polegać</span>
 
                 <div class="achievements__grid">
 
@@ -418,6 +472,7 @@
         <section class="faq section" id="faq">
             <h2 class="section-title">faq</h2>
             <div class="underline"></div>
+            <span class="eyebrow">najczęściej zadawane pytania</span>
 
             <div class="wrapper">
 
@@ -478,11 +533,7 @@
 
                                 zakresu wybranych prac,
 
-                                stanu samochodu,
-
-                                dostępności sprzętu i stanowiska,
-
-                                czasu potrzebnego na utwardzenie powłok.
+                                stanu samochodu itd.
 
                                 Drobniejsze usługi, takie jak mycie detailingowe czy odświeżenie wnętrza, często można
                                 wykonać szybciej. Zapraszam do kontaktu — sprawdzę aktualną dostępność i zaproponuję
@@ -544,47 +595,46 @@
         <section class="contact section" id="contact">
             <h2 class="section-title">kontakt</h2>
             <div class="underline"></div>
+            <span class="eyebrow">skontaktuj się ze mną</span>
 
 
             <div class="contact__grid">
-                <!-- LEFT SIDE: Pitch + CTA -->
                 <div class="contact__left glass">
                     <h3>Twój samochód zasługuje na najlepszą i profesjonalną pielęgnację.</h3>
                     <p>
                         Przywróć mu perfekcyjny wygląd dzięki profesjonalnemu detailingowi.
-                        Od odświeżenia wnętrza po pełną korektę lakieru – zadzwoń lub napisz, a zajmiemy się resztą.
+                        Od odświeżenia wnętrza po pełną korektę lakieru – zadzwoń lub napisz, a zajmę się resztą.
                     </p>
 
-                    <a href="#" class="cta-btn">Umów wizytę</a>
+                    <a href="https://wa.me/48790878108" target="_blank" class="cta-btn">Umów się</a>
                 </div>
 
 
                 <div class="contact__right glass">
                     <ul class="contact__list">
                         <li class="contact__item">
-                            <a href="tel:+48123456789" class="contact__link">
+                            <a href="https://wa.me/48790878108" class="contact__link" target="_blank">
                                 <span class="contact__icon"><i class="fa-solid fa-phone"></i></span>
-                                <span class="contact__text">+48 123 456 789</span>
+                                <span class="contact__text">+48 790 878 108</span>
                             </a>
                         </li>
 
                         <li class="contact__item">
                             <a href="mailto:kontakt@example.com" class="contact__link">
                                 <span class="contact__icon"><i class="fa-solid fa-envelope"></i></span>
-                                <span class="contact__text">kontakt@example.com</span>
+                                <span class="contact__text">krystian_semla@gmail.com</span>
                             </a>
                         </li>
 
                         <li class="contact__item">
-                            <a href="https://instagram.com/nazwa_uzytkownika" target="_blank" class="contact__link">
+                            <a href="https://www.instagram.com/xdetalzx/" target="_blank" class="contact__link">
                                 <span class="contact__icon"><i class="fa-brands fa-instagram"></i></span>
-                                <span class="contact__text">@nazwa_uzytkownika</span>
+                                <span class="contact__text">@xdetalzx</span>
                             </a>
                         </li>
                         <li class="contact__item">
-                            <a href="https://instagram.com/nazwa_uzytkownika" target="_blank" class="contact__link">
-                                <span class="contact__icon"><i class="fa-solid fa-location-dot"></i></span>
-                                <span class="contact__text">Knurów, woj. Śląskie</span>
+                            <span class="contact__icon"><i class="fa-solid fa-location-dot"></i></span>
+                            <span class="contact__text">Knurów i okolice, woj. Śląskie</span>
                             </a>
                         </li>
                     </ul>
@@ -599,14 +649,14 @@
     </main>
 
     <footer class="footer footer__glass-footer">
-        <p>&copy; 2025 xDetalz. Wszystkie prawa zastrzeżone.</p>
+        <p>&copy; <span class="current-year"></span> xDetalz. Wszystkie prawa zastrzeżone.</p>
     </footer>
 
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="js/slick.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
     <script src="js/script.js"></script>
+
 
 </body>
 

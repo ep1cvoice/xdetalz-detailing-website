@@ -1,0 +1,144 @@
+@use '../colors' as c;
+
+.nav {
+	padding: 30px;
+	position: fixed;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 100px;
+	z-index: 1000;
+	background: transparent;
+	transition: background 0.2s ease;
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		max-width: 1200px;
+		margin: 0 auto;
+		width: 100%;
+	}
+
+	&--scrolled {
+		background-color: c.$black;
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.65);
+	}
+
+	&__logo {
+		height: 70px;
+		width: 110px;
+		filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.4));
+		z-index: 10000;
+	}
+
+	&__container--left {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__container--right {
+		display: flex;
+		align-items: center;
+		gap: 40px;
+	}
+
+	&__burger {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 40px;
+		height: 40px;
+		background: transparent;
+		border: none;
+		cursor: pointer;
+		padding: 0;
+	}
+
+	&__burger-box {
+		position: relative;
+		width: 35px;
+		height: 25px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		z-index: 10000;
+	}
+
+	&__burger-box div {
+		width: 100%;
+		height: 3px;
+		background-color: c.$text-light;
+		border-radius: 2px;
+		transition: background-color 0.5s ease;
+	}
+
+	&__menu {
+		display: none;
+	}
+
+	&__menu-mobile {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 45vh;
+		transform: translateY(-100%);
+		background-color: white;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		padding-top: 5rem;
+		transition: transform 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
+		z-index: 1000;
+		background: linear-gradient(
+			to bottom,
+			c.$black 0%,
+			#141414 40%,
+			c.$secondary 100%
+		);
+
+		&--active {
+			transform: translateY(0);
+		}
+	}
+
+	&__link {
+		position: relative;
+		text-decoration: none;
+		text-transform: uppercase;
+		color: c.$text-light;
+		font-size: 2rem;
+		transition: color 0.5s;
+
+		&:hover {
+			color: c.$gold;
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			left: 50%;
+			bottom: -7px;
+			width: 80px;
+			height: 2px;
+
+			background: linear-gradient(90deg, transparent, #d4af37, transparent);
+
+			transform: translateX(-50%) scaleX(0);
+			transform-origin: center;
+			opacity: 0;
+
+			transition: transform 0.4s ease, opacity 0.3s ease;
+		}
+		&:hover::after,
+		&:focus::after {
+			transform: translateX(-50%) scaleX(1);
+			opacity: 1;
+		}
+	}
+}
