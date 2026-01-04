@@ -80,4 +80,4 @@ It fulfills its role as a landing page and can be extended further if needed.
 
 ## 8. Deployment
 
-Coming soon
+Site is live at: https://ep1cvoice.github.io/xdetalz-detailing-website/
